@@ -5,21 +5,54 @@
 
 	<body>
 
-	{% include header.html %}
+		<div class="frame">
 
-	<div class="container margin-top">
-		<div class="row">
-			<!--div class="col-md-9"-->
-				{{ content }}
-			<!--/div-->
-			<!--div class="col-md-3 sidebar" id="sidebar">
-				{% include sidebar.html %}
-			</div-->
+			{% include header.html %}
+
+			<div class="container margin-top margin-bottom">
+				<div class="row">
+					<div class="col-md-9">
+						{{ content }}
+					</div>
+					<div class="col-md-3 sidebar" id="sidebar">
+						{% include sidebar.html %}
+					</div>
+				</div>
+			</div>
+
+			{% include footer.html %}
+		
 		</div>
-	</div>
 
-    {% include footer.html %}
+		<script type="text/javascript" src="{{ site.data.global.url }}/scripts/icse-jquery.min.js"></script>
+		<script type="text/javascript" src="{{ site.data.global.url }}/scripts/icse-bootstrap.min.js"></script>
 
-  </body>
+		<script>
+			//$(document).ready(function(){ $('[data-toggle="tooltip"]').tooltip(); });
+		</script>
+
+		<script type="text/javascript">
+			(function ($) {
+				$(document).ready(function () {
+
+					$('ul.dropdown-menu [data-toggle=dropdown]').on('click', function (event) {
+						event.preventDefault();
+						event.stopPropagation();
+						$(this).parent().siblings().removeClass('open');
+						$(this).parent().toggleClass('open');
+					});
+
+					$(document).ready(function () {
+						$('.carousel').carousel({
+							interval: 10000
+						})
+					});
+									
+				});
+			})(jQuery);
+		</script>
+
+	</body>
 
 </html>
+

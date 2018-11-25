@@ -1,0 +1,48 @@
+p, ul.larger li, .well {
+    font-size: 1.3em
+}
+
+h1, h2 {
+    margin: 2em 0 .2em
+}
+
+.margin-bottom { 
+    margin-bottom: 50px 
+}
+
+ul.organization {
+    padding: 0px;
+}
+
+.organization li {
+    list-style: none;
+    margin: 10px 0
+}
+
+.member-info {
+    display: inline-block
+}
+
+.member-name {
+    font-weight: 700;
+    font-size: 120%
+}
+
+.member-affiliation {
+    color: #555
+}
+
+.member-img {
+    display: inline-block;
+    vertical-align: -16px;
+    width: 64px;
+    height: 64px;
+    border-radius: 100%;
+    background-size: cover;
+    border: 1px solid #bbb;
+    background-color: white
+}
+.well {
+    font-weight: bold;
+    text-align: center;
+}

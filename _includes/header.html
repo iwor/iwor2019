@@ -1,0 +1,102 @@
+<div class="logobar">
+    <div class="container"><a href="https://2019.icse-conferences.org/info/icse-logo" class="navbar-brand navigate">
+            <span class="brand-text">IWOR 2019</span></a>
+            <div class="place">IWoR'19 (co-located with 
+                    <a href="https://conf.researchr.org/home/icse-2019" class="navigate">ICSE'19</a>) . 25 May 2019 .
+            <a href="https://2019.icse-conferences.org/venue/icse-2019-venue" class="navigate">Montréal, QC, Canada</a></div>
+    </div>
+</div>
+
+<div class="navbar navbar-default">
+    <div class="container">
+        <div class="navbar-header"><button type="button" data-toggle="collapse" data-target="#navigationbar" class="navbar-toggle"><span
+                    class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span
+                    class="icon-bar"></span></button></div>
+        <div id="navigationbar" class="navigationbar collapse navbar-collapse">      
+            <ul class="block nav navbar-nav">
+                <li{% if page.url == "/" %} class="active"{% endif %}><a class="page-link" href="{{site.url}}/{{site.baseurl}}">
+                    <img src="{{ site.data.global.url }}/images/logo.svg" width="85"/></a></li>
+                {% assign pages = site.pages | sort: 'order' %}
+                {% for my_page in pages %}
+                {% if my_page.title %}
+                    <li{% if page.title == my_page.title %} class="active"{% endif %}>
+                        <a class="page-link" href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a></li>
+                {% endif %}
+                {% endfor %}
+            </ul>
+            
+        </div>
+    </div>
+</div>
+<div id="carousel-c080fd5c-4a26-4d0a-bf34-be4929ec7a4a" data-ride="carousel" class="carousel slide carousel-fade">
+    <ol class="carousel-indicators">
+        <li data-target="#carousel-c080fd5c-4a26-4d0a-bf34-be4929ec7a4a" data-slide-to="0" class="active"></li>
+        <li data-target="#carousel-c080fd5c-4a26-4d0a-bf34-be4929ec7a4a" data-slide-to="1"></li>
+        <li data-target="#carousel-c080fd5c-4a26-4d0a-bf34-be4929ec7a4a" data-slide-to="2"></li>
+        <li data-target="#carousel-c080fd5c-4a26-4d0a-bf34-be4929ec7a4a" data-slide-to="3"></li>
+        <li data-target="#carousel-c080fd5c-4a26-4d0a-bf34-be4929ec7a4a" data-slide-to="4"></li>
+        <li data-target="#carousel-c080fd5c-4a26-4d0a-bf34-be4929ec7a4a" data-slide-to="5"></li>
+        <li data-target="#carousel-c080fd5c-4a26-4d0a-bf34-be4929ec7a4a" data-slide-to="6"></li>
+    </ol>
+    <div class="carousel-inner" style="background-color: #FFF;">
+        <div class="item active">
+            <div class="fill" style="background-image:url('{{ site.data.global.url }}/carousel-images/montreal-skyline.jpg');"></div>
+            <div class="attribution">By Arild Vågen - Own work, CC BY-SA 4.0, https://commons.wikimedia.org/w/index.php?curid=62709746</div>
+            <div class="carousel-caption">
+                <h3>Montréal Skyline</h3>
+                <h5></h5>
+            </div>
+        </div>
+        <div class="item">
+            <div class="fill" style="background-image:url('{{ site.data.global.url }}/carousel-images/biosphere.jpg');"></div>
+            <div class="attribution">By Ralf Roletschek - Own work, GFDL 1.2, https://commons.wikimedia.org/w/index.php?curid=61794223</div>
+            <div class="carousel-caption">
+                <h3>Biosphère, musée de l'environnement</h3>
+                <h5></h5>
+            </div>
+        </div>
+        <div class="item">
+            <div class="fill" style="background-image:url('{{ site.data.global.url }}/carousel-images/place-jacques-cartier.jpg');"></div>
+            <div class="attribution">By Diliff - Own work, CC BY 2.5, https://commons.wikimedia.org/w/index.php?curid=496342</div>
+            <div class="carousel-caption">
+                <h3>Place Jacques-Cartier</h3>
+                <h5></h5>
+            </div>
+        </div>
+        <div class="item">
+            <div class="fill" style="background-image:url('{{ site.data.global.url }}/carousel-images/frederick-back-mural.jpg');"></div>
+            <div class="attribution">By EMDX - Own work, CC BY-SA 3.0, https://commons.wikimedia.org/w/index.php?curid=3392146</div>
+            <div class="carousel-caption">
+                <h3>Frederick Back mural, Place-des-Arts Métro station</h3>
+                <h5></h5>
+            </div>
+        </div>
+        <div class="item">
+            <div class="fill" style="background-image:url('{{ site.data.global.url }}/carousel-images/clock-tower.jpg');"></div>
+            <div class="attribution">By Michael Vesia - Own work, CC BY-SA 3.0, https://commons.wikimedia.org/w/index.php?curid=28149120</div>
+            <div class="carousel-caption">
+                <h3>Clock Tower in Montréal Fireworks Festival</h3>
+                <h5></h5>
+            </div>
+        </div>
+        <div class="item">
+            <div class="fill" style="background-image:url('{{ site.data.global.url }}/carousel-images/basilica-de-notre-dame.jpg');"></div>
+            <div class="attribution">By Diego Delso, CC BY-SA 4.0, https://commons.wikimedia.org/w/index.php?curid=62436333</div>
+            <div class="carousel-caption">
+                <h3>Basilica de Notre Dam</h3>
+                <h5></h5>
+            </div>
+        </div>
+        <div class="item">
+            <div class="fill" style="background-image:url('{{ site.data.global.url }}/carousel-images/habitat-67.jpg');"></div>
+            <div class="attribution">By Sylvain Pastor - Own work, CC BY-SA 3.0, https://commons.wikimedia.org/w/index.php?curid=21419037</div>
+            <div class="carousel-caption">
+                <h3>Habitat 67</h3>
+                <h5></h5>
+            </div>
+        </div> 
+    </div>
+    <a href="#carousel-c080fd5c-4a26-4d0a-bf34-be4929ec7a4a" data-slide="prev" class="left carousel-control"><span
+            class="glyphicon glyphicon-chevron-left"></span></a><a href="#carousel-c080fd5c-4a26-4d0a-bf34-be4929ec7a4a"
+        data-slide="next" class="right carousel-control"><span class="glyphicon glyphicon-chevron-right"></span></a>
+</div>
