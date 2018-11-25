@@ -7,13 +7,13 @@
 	<meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}" />
 
 	<!-- ICSE'19 -->
-	<link rel="stylesheet" href="{{ site.data.global.url }}/css/icse-bootstrap.min.css" />
-	<link rel="stylesheet" href="{{ site.data.global.url }}/css/icse-common.css" />
-	<link rel="stylesheet" href="{{ site.data.global.url }}/css/icse-conf.css" />
-	<link rel="stylesheet" href="{{ site.data.global.url }}/css/icse-newb.css" />
-	<link rel="stylesheet" href="{{ site.data.global.url }}/css/icse-theme.bootstrap.min.css" />
+	<link rel="stylesheet" href="{{ "/css/icse-bootstrap.min.css" | prepend: site.baseurl | prepend: site.url }}" />
+	<link rel="stylesheet" href="{{ "/css/icse-common.css" | prepend: site.baseurl | prepend: site.url }}" />
+	<link rel="stylesheet" href="{{ "/css/icse-conf.css" | prepend: site.baseurl | prepend: site.url }}" />
+	<link rel="stylesheet" href="{{ "/css/icse-newb.css" | prepend: site.baseurl | prepend: site.url }}" />
+	<link rel="stylesheet" href="{{ "/css/icse-theme.bootstrap.min.css" | prepend: site.baseurl | prepend: site.url }}" />
 
-	<link rel="stylesheet" href="{{ site.data.global.url }}/css/main.css" />
+	<link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl | prepend: site.url }}" />
 
 	<link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}" />
 
