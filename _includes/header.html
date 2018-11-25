@@ -14,7 +14,7 @@
                     class="icon-bar"></span></button></div>
         <div id="navigationbar" class="navigationbar collapse navbar-collapse">      
             <ul class="block nav navbar-nav">
-                <li{% if page.url == "/" %} class="active"{% endif %}><a class="page-link" href="{{site.url}}/{{site.baseurl}}">
+                <li{% if page.url == "/" %} class="active"{% endif %}><a class="page-link" href="{{site.url}}{{site.baseurl}}">
                     <img src="{{ "/images/logo.svg" | prepend: site.baseurl | prepend: site.url }}" width="85"/></a></li>
                 {% assign pages = site.pages | sort: 'order' %}
                 {% for my_page in pages %}
